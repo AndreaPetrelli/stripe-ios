@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  When set to true, the nextAction may contain information that the Stripe SDK can use to perform native authentication within your
  app.
  */
-@property (nonatomic, nullable) NSNumber *useStripeSDK;
+@property (nonatomic, nullable, strong) NSNumber *useStripeSDK;
 
 @end
 

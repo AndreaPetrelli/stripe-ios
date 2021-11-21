@@ -25,17 +25,17 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The individual’s primary address.
  */
-@property (nonatomic, nullable) STPConnectAccountAddress *address;
+@property (nonatomic, nullable, strong) STPConnectAccountAddress *address;
 
 /**
  The Kana variation of the the individual’s primary address (Japan only).
  */
-@property (nonatomic, nullable) STPConnectAccountAddress *kanaAddress;
+@property (nonatomic, nullable, strong) STPConnectAccountAddress *kanaAddress;
 
 /**
  The Kanji variation of the the individual’s primary address (Japan only).
  */
-@property (nonatomic, nullable) STPConnectAccountAddress *kanjiAddress;
+@property (nonatomic, nullable, strong) STPConnectAccountAddress *kanjiAddress;
 
 /**
  The individual’s date of birth.

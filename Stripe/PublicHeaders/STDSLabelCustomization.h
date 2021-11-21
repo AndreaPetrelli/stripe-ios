@@ -21,10 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)defaultSettings;
 
 /// The color of the heading text. Defaults to black.
-@property (nonatomic) UIColor *headingTextColor;
+@property (nonatomic, strong) UIColor *headingTextColor;
 
 /// The font to use for the heading text.
-@property (nonatomic) UIFont *headingFont;
+@property (nonatomic, strong) UIFont *headingFont;
 
 @end
 

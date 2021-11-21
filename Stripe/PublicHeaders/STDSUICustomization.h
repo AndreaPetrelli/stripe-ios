@@ -33,31 +33,31 @@ NS_ASSUME_NONNULL_BEGIN
  Provides custom settings for the UINavigationBar of all UIViewControllers the SDK display.
  The default is `[STDSNavigationBarCustomization defaultSettings]`.
  */
-@property (nonatomic) STDSNavigationBarCustomization *navigationBarCustomization;
+@property (nonatomic, strong) STDSNavigationBarCustomization *navigationBarCustomization;
 
 /**
  Provides custom settings for labels.
  The default is `[STDSLabelCustomization defaultSettings]`.
  */
-@property (nonatomic) STDSLabelCustomization *labelCustomization;
+@property (nonatomic, strong) STDSLabelCustomization *labelCustomization;
 
 /**
  Provides custom settings for text fields.
  The default is `[STDSTextFieldCustomization defaultSettings]`.
  */
-@property (nonatomic) STDSTextFieldCustomization *textFieldCustomization;
+@property (nonatomic, strong) STDSTextFieldCustomization *textFieldCustomization;
 
 /**
  The primary background color of all UIViewControllers the SDK display.
  Defaults to white.
  */
-@property (nonatomic) UIColor *backgroundColor;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 /**
  The Challenge view displays a footer with additional details.  This controls the background color of that view.
  Defaults to gray.
  */
-@property (nonatomic) STDSFooterCustomization *footerCustomization;
+@property (nonatomic, strong) STDSFooterCustomization *footerCustomization;
 
 /**
  Sets a given button customization for the specified type.
@@ -80,7 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
  Provides custom settings for radio buttons and checkboxes.
  The default is `[STDSSelectionCustomization defaultSettings]`.
  */
-@property (nonatomic) STDSSelectionCustomization *selectionCustomization;
+@property (nonatomic, strong) STDSSelectionCustomization *selectionCustomization;
 
 
 /**

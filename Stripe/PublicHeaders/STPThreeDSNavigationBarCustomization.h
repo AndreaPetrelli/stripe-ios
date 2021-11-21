@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  The tint color of the navigation bar background.
  Defaults to nil.
  */
-@property (nonatomic, nullable) UIColor *barTintColor;
+@property (nonatomic, nullable, strong) UIColor *barTintColor;
 
 /**
  The navigation bar style.
@@ -54,10 +54,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *buttonText;
 
 /// The font to use for the title. Defaults to nil.
-@property (nonatomic, nullable) UIFont *font;
+@property (nonatomic, nullable, strong) UIFont *font;
 
 /// The color to use for the title. Defaults to nil.
-@property (nonatomic, nullable) UIColor *textColor;
+@property (nonatomic, nullable, strong) UIColor *textColor;
 
 @end
 

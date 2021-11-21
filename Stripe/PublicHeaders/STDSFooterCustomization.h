@@ -25,16 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
  The background color of the footer.
  Defaults to gray.
  */
-@property (nonatomic) UIColor *backgroundColor;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 /// The color of the chevron. Defaults to a dark gray.
-@property (nonatomic) UIColor *chevronColor;
+@property (nonatomic, strong) UIColor *chevronColor;
 
 /// The color of the heading text. Defaults to black.
-@property (nonatomic) UIColor *headingTextColor;
+@property (nonatomic, strong) UIColor *headingTextColor;
 
 /// The font to use for the heading text.
-@property (nonatomic) UIFont *headingFont;
+@property (nonatomic, strong) UIFont *headingFont;
 
 @end
 

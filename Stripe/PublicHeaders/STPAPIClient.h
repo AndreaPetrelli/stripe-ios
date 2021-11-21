@@ -98,7 +98,7 @@ static NSString *const STPSDKVersion = @"17.0.4";
 
  @see https://stripe.com/docs/building-plugins#setappinfo
  */
-@property (nonatomic, nullable) STPAppInfo *appInfo;
+@property (nonatomic, nullable, strong) STPAppInfo *appInfo;
 
 @end
 

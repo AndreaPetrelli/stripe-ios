@@ -23,17 +23,17 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The company’s primary address.
  */
-@property (nonatomic, strong) STPConnectAccountAddress *address;
+@property (nonatomic, strong, strong) STPConnectAccountAddress *address;
 
 /**
  The Kana variation of the company’s primary address (Japan only).
  */
-@property (nonatomic, nullable) STPConnectAccountAddress *kanaAddress;
+@property (nonatomic, nullable, strong) STPConnectAccountAddress *kanaAddress;
 
 /**
  The Kanji variation of the company’s primary address (Japan only).
  */
-@property (nonatomic, nullable) STPConnectAccountAddress *kanjiAddress;
+@property (nonatomic, nullable, strong) STPConnectAccountAddress *kanjiAddress;
 
 /**
  Whether the company’s directors have been provided.
@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
  Set this Boolean to true after creating all the company’s directors with the Persons API (https://stripe.com/docs/api/persons) for accounts with a relationship.director requirement.
  This value is not automatically set to true after creating directors, so it needs to be updated to indicate all directors have been provided.
  */
-@property (nonatomic, nullable) NSNumber *directorsProvided;
+@property (nonatomic, nullable, strong) NSNumber *directorsProvided;
 
 /**
  The company’s legal name.
@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  Set this Boolean to true after creating all the company’s owners with the Persons API (https://stripe.com/docs/api/persons) for accounts with a relationship.owner requirement.
  */
-@property (nonatomic, nullable) NSNumber *ownersProvided;
+@property (nonatomic, nullable, strong) NSNumber *ownersProvided;
 
 /**
  The company’s phone number (used for verification).

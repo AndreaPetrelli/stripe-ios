@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface STDSCustomization : NSObject <NSCopying>
 
 /// The font to use for text.
-@property (nonatomic, nullable) UIFont *font;
+@property (nonatomic, strong, nullable) UIFont *font;
 
 /// The color to use for the text.
-@property (nonatomic, nullable) UIColor *textColor;
+@property (nonatomic, strong, nullable) UIColor *textColor;
 
 @end
 

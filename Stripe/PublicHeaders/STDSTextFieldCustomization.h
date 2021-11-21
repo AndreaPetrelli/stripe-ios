@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat borderWidth;
 
 /// The color of the border of the text field. Defaults to clear.
-@property (nonatomic) UIColor *borderColor;
+@property (nonatomic, strong) UIColor *borderColor;
 
 /// The corner radius of the edges of the text field. Defaults to 8.
 @property (nonatomic) CGFloat cornerRadius;
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UIKeyboardAppearance keyboardAppearance;
 
 /// The color of the placeholder text. Defaults to light gray.
-@property (nonatomic) UIColor *placeholderTextColor;
+@property (nonatomic, strong) UIColor *placeholderTextColor;
 
 @end
 

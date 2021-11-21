@@ -131,7 +131,7 @@ NS_EXTENSION_UNAVAILABLE("STPPaymentHandler is not available in extensions")
 /**
  By default `sharedHandler` initializes with [STPAPIClient sharedClient].
  */
-@property (nonatomic) STPAPIClient *apiClient;
+@property (nonatomic, strong) STPAPIClient *apiClient;
 
 /**
  Customizable settings to use when performing 3DS2 authentication.
@@ -139,7 +139,7 @@ NS_EXTENSION_UNAVAILABLE("STPPaymentHandler is not available in extensions")
  Note: Configure this before calling any methods.
  Defaults to `[STPThreeDSCustomizationSettings defaultSettings]`.
  */
-@property (nonatomic) STPThreeDSCustomizationSettings *threeDSCustomizationSettings;
+@property (nonatomic, strong) STPThreeDSCustomizationSettings *threeDSCustomizationSettings;
 
 /**
  Confirms the PaymentIntent with the provided parameters and handles any `nextAction` required

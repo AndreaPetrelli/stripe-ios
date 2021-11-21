@@ -55,12 +55,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  If this is a iDEAL PaymentMethod, this contains details about user's bank.
  */
-@property (nonatomic, nullable) STPPaymentMethodiDEALParams *iDEAL;
+@property (nonatomic, nullable, strong) STPPaymentMethodiDEALParams *iDEAL;
 
 /**
  If this is a FPX PaymentMethod, this contains details about user's bank.
  */
-@property (nonatomic, nullable) STPPaymentMethodFPXParams *fpx;
+@property (nonatomic, nullable, strong) STPPaymentMethodFPXParams *fpx;
 
 /**
  Set of key-value pairs that you can attach to the PaymentMethod. This can be useful for storing additional information about the PaymentMethod in a structured format.

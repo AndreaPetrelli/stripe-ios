@@ -104,7 +104,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see STPPaymentIntentSetupFutureUsage for more details on what values you can provide.
  */
-@property (nonatomic, nullable) NSNumber *setupFutureUsage;
+@property (nonatomic, nullable, strong) NSNumber *setupFutureUsage;
 
 /**
  A boolean number to indicate whether you intend to use the Stripe SDK's functionality to handle any PaymentIntent next actions.
@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
  When set to true, the nextAction may contain information that the Stripe SDK can use to perform native authentication within your
  app.
  */
-@property (nonatomic, nullable) NSNumber *useStripeSDK;
+@property (nonatomic, nullable, strong) NSNumber *useStripeSDK;
 
 /**
  The URL to redirect your customer back to after they authenticate or cancel

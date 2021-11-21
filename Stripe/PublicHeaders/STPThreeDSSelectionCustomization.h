@@ -24,25 +24,25 @@ NS_ASSUME_NONNULL_BEGIN
  The primary color of the selected state.
  Defaults to blue.
  */
-@property (nonatomic) UIColor *primarySelectedColor;
+@property (nonatomic, strong) UIColor *primarySelectedColor;
 
 /**
  The secondary color of the selected state (e.g. the checkmark color).
  Defaults to white.
  */
-@property (nonatomic) UIColor *secondarySelectedColor;
+@property (nonatomic, strong) UIColor *secondarySelectedColor;
 
 /**
  The background color displayed in the unselected state.
  Defaults to light blue.
  */
-@property (nonatomic) UIColor *unselectedBackgroundColor;
+@property (nonatomic, strong) UIColor *unselectedBackgroundColor;
 
 /**
  The color of the border drawn around the view in the unselected state.
  Defaults to blue.
  */
-@property (nonatomic) UIColor *unselectedBorderColor;
+@property (nonatomic, strong) UIColor *unselectedBorderColor;
 
 @end
 

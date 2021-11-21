@@ -47,13 +47,13 @@ NS_ASSUME_NONNULL_BEGIN
  Provides custom settings for text fields.
  The default is `[STPThreeDSTextFieldCustomization defaultSettings]`.
  */
-@property (nonatomic) STPThreeDSTextFieldCustomization *textFieldCustomization;
+@property (nonatomic, strong) STPThreeDSTextFieldCustomization *textFieldCustomization;
 
 /**
  The primary background color of all UIViewControllers displayed during 3D Secure authentication.
  Defaults to white.
  */
-@property (nonatomic) UIColor *backgroundColor;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 /**
  Provides custom settings for the footer the challenge view can display containing additional details.

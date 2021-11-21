@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
  The tint color of the navigation bar background.
  Defaults to nil.
  */
-@property (nonatomic, nullable) UIColor *barTintColor;
+@property (nonatomic, nullable, strong) UIColor *barTintColor;
 
 /**
  The navigation bar style.

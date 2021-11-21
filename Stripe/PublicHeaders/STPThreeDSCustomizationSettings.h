@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  Defaults to `[STPThreeDSUICustomization defaultSettings]`.
  */
-@property (nonatomic) STPThreeDSUICustomization *uiCustomization;
+@property (nonatomic, strong) STPThreeDSUICustomization *uiCustomization;
 
 /**
  `authenticationTimeout` is the total time allowed for a user to complete a 3DS2 authentication
